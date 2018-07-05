@@ -28,8 +28,8 @@
                 </li>
 				<li><a href="<?=site_url();?>galleries">Gallery</a>
 				 <ul>
-                    <li><a href="<?=site_url();?>doctors">Images</a></li>
-                    <li><a href="<?=site_url();?>packages">Video</a></li>
+                    <li><a href="<?=site_url();?>galleries/gallery_image">Images</a></li>
+                    <li><a href="<?=site_url();?>galleries/gallery_video">Video</a></li>
                   </ul>
 				</li>
 				<li><a href="<?=site_url();?>contact_us">Contact Us</a></li>

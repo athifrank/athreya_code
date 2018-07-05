@@ -134,6 +134,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 	}
 	?>
+	
+	
+	<div class="" style="">
+		<div class="col-lg-12">
+			<h1 class="page-header">
+			Notes:
+			</h1>
+		</div>
+		
+		<div class="col-lg-12">
+				<?php
+				$countRows = $note->num_rows();
+				if (empty($countRows)){
+					echo '<span>Notes are not available...</span>';
+				}else
+				{
+					$row=$note->result_array();
+					foreach ($row as $con) {
+						$value = $con['description'];
+						
+						echo $value;
+						  
+					}
+				}
+				?>
+		</div>
+	</div>
+	
+	
 </div>
 				
 

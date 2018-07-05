@@ -26,6 +26,7 @@ class Galleries extends CI_Controller {
 		$folder_name=$this->uri->segment(4);
 		$data['folder_name']=$folder_name;
 		$data['query']=$this->gallery_mod->image_view($id);
+		$data['note']=$this->gallery_mod->get_note($id);
 		//print_r($data);
 		$this->load->view('gallery_image_view',$data);
 	}

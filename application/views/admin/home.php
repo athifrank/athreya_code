@@ -42,7 +42,7 @@ if (!(isset($_SESSION['admin']) && $_SESSION['admin'] != ''))
 								<i class="fa fa-file fa-5x"></i>
 							</div>
 							<div class="col-xs-6 text-center">
-								<div><h1>Total Files</h1></div>
+								<div><h1>Total Files(Images & videos)</h1></div>
 								<div class="huge"><?php echo $total;?></div>
 							</div>
 						</div>
@@ -95,6 +95,30 @@ if (!(isset($_SESSION['admin']) && $_SESSION['admin'] != ''))
 					</a>
 				</div>
 			</div>
+			
+			<div class="col-lg-3 col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-3">
+								<i class="fa fa-sticky-note-o fa-5x"></i>
+							</div>
+							<div class="col-xs-9 text-right">
+								<div>Total Notes</div>
+								<div class="huge"><?php echo $note;?></div>
+							</div>
+						</div>
+					</div>
+					<a href="<?=site_url()?>admin_note">
+						<div class="panel-footer">
+							<span class="pull-left">Upload Notes</span>
+							<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+							<div class="clearfix"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+			
 
 		</div>
 

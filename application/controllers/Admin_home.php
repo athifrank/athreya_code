@@ -9,13 +9,13 @@ class Admin_home extends CI_Controller
 		parent::__construct();
 		$this->load->database();
 		$this->load->model('admin_home_mod');
+		$this->load->model('admin_note_mod');
 
 	}
 
 	public function index()
 	{
-		//$this->load->view('admin/home');
-     
+		$data['note']=$this->admin_note_mod->note();
         $data['gallery']=$this->admin_home_mod->gallery();
         $data['video']=$this->admin_home_mod->gallery_video();
 		 $data['total']=$data['gallery']+$data['video'];

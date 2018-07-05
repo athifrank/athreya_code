@@ -66,7 +66,7 @@ if (!(isset($_SESSION['admin']) && $_SESSION['admin'] != ''))
 			
 					<div class="form-group" >
 						 <label for="exampleFormControlTextarea1"></label>
-                         <textarea  class="ckeditor" cols="80" name="desc" id="exampleFormControlTextarea1" rows="10"></textarea>
+                         <textarea  class="ckeditor" name="desc" id="exampleFormControlTextarea1"></textarea>
 					</div><br><br>
 
 				

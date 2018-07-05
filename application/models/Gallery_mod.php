@@ -18,6 +18,11 @@ class Gallery_mod extends CI_model {
 		return $query;
 	}
 
+		public function get_note($id){
+		$sql="SELECT * from add_note where gid=$id";
+		$query=$this->db->query($sql);
+		return $query;
+	}
 
 }
 ?>
