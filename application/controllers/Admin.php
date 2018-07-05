@@ -8,10 +8,12 @@ class Admin extends CI_Controller{
 		$this->load->database();
 		$this->load->model('admin_mod');
 		$this->load->model('admin_home_mod');
+		$this->load->model('admin_note_mod');
 	}
 
 	public function index()
 	{
+
 		$this->load->view('admin/index');
 	}
 
@@ -42,7 +44,7 @@ class Admin extends CI_Controller{
 				$_SESSION['admin'] = "1";
 				$_SESSION['name'] = $name;
 
-				
+				$data['note']=$this->admin_note_mod->note();
 				$data['gallery']=$this->admin_home_mod->gallery();
 				$data['video']=$this->admin_home_mod->gallery_video();
 				$data['total']=$data['gallery']+$data['video'];
@@ -57,6 +59,13 @@ class Admin extends CI_Controller{
 				//header('location: ../index1.php?a=i85');
 			}
 		}
+	}
+	public function page_expired(){
+		$this->load->view('admin/page_expired');
+	}
+	
+	public function home(){
+		$this->load->view('admin/home');
 	}
 
 	public function logout(){

@@ -4,7 +4,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 if (!(isset($_SESSION['admin']) && $_SESSION['admin'] != ''))
 {
-	$this->load->view('admin/page_expired');
+	redirect('admin/page_expired');
 }
 ?>
 

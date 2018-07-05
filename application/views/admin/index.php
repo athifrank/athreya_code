@@ -4,7 +4,7 @@ if (!(isset($_SESSION['admin']) && $_SESSION['admin'] != '')){
 	echo '';
 }
 else {
-	$this->load->view('admin/home');
+	redirect('admin/home');
 }
 ?>
 <!DOCTYPE html>
