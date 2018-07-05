@@ -1,0 +1,39 @@
+img.wp-smiley,img.emoji{
+	display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:none!important;padding:0!important
+	}
+
+	div#main_one {
+    margin-top: -18px;
+}
+@font-face {
+	font-family: age;
+	src: url('../fonts/Age.otf');
+}
+
+.alert-purple { border-color: #694D9F;background: #694D9F;color: #fff; }
+.alert-info-alt { border-color: #B4E1E4;background: #81c7e1;color: #fff; }
+.alert-danger-alt { border-color: #B63E5A;background: #E26868;color: #fff; }
+.alert-warning-alt { border-color: #F3F3EB;background: #E9CEAC;color: #fff; }
+.alert-success-alt { border-color: #19B99A;background: #20A286;color: #fff; }
+
+
+.noty{
+	margin-bottom: 4px;
+	margin-right: -10px;
+	margin-left: -10px;
+}
+ul.tabs {
+	list-style-type: none;
+}
+.panel-heading.tabs.col-md-6.active {
+	background: #81c7e1;
+}
+tr.odd{
+	text-align: center;
+}
+tr.even{
+	text-align: center;
+}
+div#dataTables-example_filter {
+	float: right;
+}

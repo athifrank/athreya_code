@@ -1,0 +1,29 @@
+.hiddenDiv {display: none;}
+.visibleDiv {display: block;}
+.cc1 {
+	width: 740px;
+	margin: 0 auto;
+}
+
+.text {
+	font-family: Verdana;
+	font-size: 12px;
+	color: #4A4A4A;
+	margin: 8px 8px 0 184px;
+	line-height: 2;
+	text-align: justify;
+}
+
+.tdbox2 {
+	background-color: #337abd;
+	color: #FFF;
+	border: #CCC 1px solid;
+	margin-left: 140px;
+}
+
+.tdbox1 {
+	background-color: #C66;
+	color: #FFF;
+	border: #CCC 1px solid;
+	margin-left: 10px;
+}

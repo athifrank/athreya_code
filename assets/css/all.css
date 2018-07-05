@@ -1,0 +1,149 @@
+/*
+ *  nmcDropDown example
+ *  Site by New Media Campaigns
+ */
+
+
+/* Begin general styles */
+
+
+
+li{list-style:none;}
+
+/* Begin header styles */
+
+#menu {
+
+  width: 987px;
+  height: 40px;
+  margin: 0px auto;
+ 
+  }
+
+
+#nav {
+	float: left;
+	width:949px;
+	margin: 0px auto;
+	padding: 0 20px;
+	height: 40px;
+	background: #3b4144;
+	
+	
+	}
+#nav li {
+	float: left;
+	position: relative;
+	}
+#nav li.open, #nav li:hover {
+  background: #FDD7E4;
+  color: #000;
+  }
+  
+  #nav li.open, #nav a:hover {  
+  color: #000;
+  }
+#nav li a {
+	display: block;
+	padding: 10px 25px;
+	line-height: 20px;
+	color: #fff;
+	text-decoration: none;
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	}
+
+#nav li ul {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 130px;
+  padding: 0 0 5px;
+  background: #FDD7E4;
+  border: solid #FDD7E4;
+  border-width: 0 1px 1px;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 3px rgba(0,0,0,0.15);
+  }
+#nav li:hover ul {
+  display: block;
+  
+  }
+#nav li ul li {
+  float: none;
+  }
+#nav li ul li a {
+  padding: 8px 10px;
+  display: inline-block;color:#000;
+  }
+#nav li ul li a {display: block;}
+#nav li ul li a:hover {
+  background: #FAAFBA;
+  color: #000;
+  }
+
+/* End header */
+
+
+/* Begin Sidebar */
+
+#sidebar {
+  float: right;
+  width: 180px;
+  }
+
+#sidebarNav {
+	padding: 10px 0;
+	background: #ccc;
+	border: 1px solid #bbb;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	}
+#sidebarNav li {
+  border-top: 0 solid #ccc;
+  }
+#sidebarNav li:hover, #sidebarNav li.open {
+  background: #bbb;
+  }
+#sidebarNav li a {
+	display: block;
+	padding: 5px 10px;
+	line-height: 20px;
+	color: #444;
+	font-weight: bold;
+	text-decoration: none;
+  display: inline-block;
+  }
+#sidebarNav li a {display: block;}
+#sidebarNav li p {
+  display: none;
+  padding: 5px 10px 10px;
+	color: #444;
+	border-top: 1px dashed #aaa;
+  }
+#sidebarNav li:hover p {
+  display: block;
+  }
+  
+/* End Sidebar */
+
+
+/* Begin body styles */
+
+#body {
+  float: left;
+  clear: both;
+  width: 600px;
+	}
+	
+/* End body */

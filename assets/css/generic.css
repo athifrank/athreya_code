@@ -1,0 +1,17 @@
+html, body, a, address, blockquote, div, span, dl, dd, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, label, td, th, ul, li, ol { margin: 0; padding: 0; font-size: 12px; font-family: arial, sans-serif; color: #3b4144;}
+
+body { background: #e5e7e9; margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; color:#000; }
+
+a { color: #000; text-decoration: none; outline: none; }
+a:hover { color: #000; text-decoration:none; }
+a img { border: 0; }
+a.viewAll { font-weight: bold; }
+
+ul { list-style: none; }
+
+.clearfix:after { content: "."; display: block; clear: both; height: 0; visibility: hidden; }
+.clearfix { min-height: 1px; height: auto !important; height: 1px; }
+
+.hidden { display: none; }
+.center { text-align: center; }
